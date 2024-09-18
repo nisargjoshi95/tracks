@@ -67,10 +67,10 @@ packages:
   - 'less'
   - 'libfido2'
   - 'libusb-compat'
-  - 'linux-t2'
-  - 'linux-t2-headers'
+  # - 'linux-t2'
+  # - 'linux-t2-headers'
   - 'linux-atm'
-  - 'linux-firmware'
+  # - 'linux-firmware'
   - 'linux-firmware-marvell'
   - 'man-db'
   - 'man-pages'
@@ -105,7 +105,6 @@ packages:
   - 'sudo'
   - 'syslinux'
   - 'tcpdump'
-  - 'tiny-dfr'
   - 'tpm2-tss'
   - 'udftools'
   - 'usb_modeswitch'
@@ -190,6 +189,23 @@ packages:
   - 'filesystem-blend'
   - 'fprintd'
   - 'firefox'
+  ### custom packages ###
+  # t2 specific
+  - 'linux-t2'
+  - 'linux-t2-headers'
+  - 'linux-firmware'
+  - 'apple-t2-audio-config'
+  - 'apple-bcm-firmware'
+  - 'iwd'
+  - 'tiny-dfr'
+  - 't2fanrd'
+  # system
+  - 'doas'
+  # editors
+  - 'neovim'
+  - 'emacs'
+  # desktop environment
+  - 'gnome-tweaks'
 
 services:
   - 'cups'
@@ -197,6 +213,8 @@ services:
   - 'NetworkManager'
   - 'gdm'
   - 'fprintd'
+  - 't2fanrd'
+  - 'tiny-dfr'
 
 user-services:
   - 'blend-files'
